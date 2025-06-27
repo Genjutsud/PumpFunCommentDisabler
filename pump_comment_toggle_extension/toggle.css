@@ -1,0 +1,23 @@
+.comment-toggle {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.comment-toggle.disabled {
+  background-color: #ff4c4c;
+  color: #fff;
+  border-color: #ff4c4c;
+}
+
+.comment-toggle.enabled {
+  background-color: transparent;
+  border-color: #888;
+}

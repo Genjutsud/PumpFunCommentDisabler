@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Pump.fun Comment Toggle Inline",
+  "version": "1.0",
+  "description": "Toggle comment section inline on Pump.fun posts",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://pump.fun/*"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Toggle Comments"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://pump.fun/*"],
+      "js": ["content.js"],
+      "css": ["toggle.css"]
+    }
+  ]
+}
